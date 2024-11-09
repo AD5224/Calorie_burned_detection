@@ -1,4 +1,4 @@
-The Calorie Burn Detection System predicts the number of calories burned during physical activity using accelerometer and gyroscope data. The system processes sensor data and applies a RandomForest Regressor model to estimate calorie expenditure. It features a web interface where users input their activity data, and the backend (Python script) performs the prediction and returns the result. The project is organized with a clean structure, including separate folders for static assets (images, CSS, JS) and templates (HTML), ensuring an interactive and user-friendly experience.
+This project focuses on building a calorie burn detection system using machine learning. The model predicts the number of calories burned based on the type of physical activity, its duration, and the user's weight. The system uses a RandomForest Regressor to estimate calorie expenditure, making it a useful tool for fitness tracking applications.
 
 Project Structure:
 
