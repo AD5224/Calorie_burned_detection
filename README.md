@@ -4,20 +4,20 @@ Project Structure:
 
 calorie-burn-detection/
 │
-├── calorie_detection.py            # Main Python script for calorie burn prediction
+├── calorie_detection.py           
 │
-├── static/                         # Folder for static assets like images, CSS, and JS
-│   ├── images/                     # Folder for storing images 
-│   │   └── backround.png           # Example image
+├── static/                        
+│   ├── images/                     
+│   │   └── backround.png         
 │   │
-│   ├── scripts/                    # Folder for storing JavaScript files
-│   │   └── script.js               # JavaScript for front-end interactions
+│   ├── scripts/                   
+│   │   └── script.js               
 │   │
-│   └── styles/                     # Folder for storing CSS files
-│       └── styles.css              # Styles for the web page
+│   └── styles/                    
+│       └── styles.css            
 │
-├── templates/                      # Folder for HTML templates
-│   └── index.html                  # Main HTML page of the project
+├── templates/                      
+│   └── index.html                  
 │
 └── README.md           
 
