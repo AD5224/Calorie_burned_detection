@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Calorie Detection</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calorie Detection</h1>
+        <form id="calorieForm" method="POST" action="/predict">
+            <div class="input-group">
+                <label for="activity">Activity:</label>
+                <select name="activity" id="activity" required>
+                    <option value="">Select an activity</option>
+                    <option value="running">Running</option>
+                    <option value="walking">Walking</option>
+                    <option value="cycling">Cycling</option>
+                    <option value="swimming">Swimming</option>
+                </select>
+            </div>
+            <div class="input-group">
+                <label for="duration">Duration (minutes):</label>
+                <input type="number" name="duration" id="duration" required>
+            </div>
+            <div class="input-group">
+                <label for="weight">Weight (kg):</label>
+                <input type="number" name="weight" id="weight" required>
+            </div>
+            <button type="submit">Calculate Calories</button>
+        </form>
+        {% if prediction is not none %}
+        <div class="result">
+            <h2>Predicted Calories Burned: {{ prediction | round(2) }}</h2>
+        </div>
+        {% endif %}
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
